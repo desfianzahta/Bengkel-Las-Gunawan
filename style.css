@@ -1,0 +1,668 @@
+/* ==========================================
+   BENGKEL LAS GUNAWAN
+   STYLE.CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f0f0f;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#111;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:6px solid #333;
+    border-top:6px solid orange;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin-bottom:20px;
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* =========================
+   NAVBAR
+========================= */
+body{ padding-top: 90px; } .navbar{ background: rgba(0,0,0,.45); backdrop-filter: blur(10px); transition: .4s; padding: 15px 0; }
+.navbar{
+
+background:rgba(0,0,0,.45);
+
+backdrop-filter:blur(10px);
+
+transition:.4s;
+
+padding:15px 0;
+
+}
+
+.navbar-brand{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:orange !important;
+
+}
+
+.nav-link{
+
+color:white !important;
+
+margin-left:15px;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+.nav-link:hover{
+
+color:orange !important;
+
+}
+
+.btn-warning{
+
+background:orange;
+
+border:none;
+
+color:white;
+
+font-weight:600;
+
+border-radius:40px;
+
+padding:12px 28px;
+
+transition:.3s;
+
+}
+
+.btn-warning:hover{
+
+background:#ff9800;
+
+transform:translateY(-3px);
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background:url("assets/workshop.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(0,0,0,.65);
+
+}
+
+.hero .container{
+
+position:relative;
+
+z-index:2;
+
+}
+
+.hero h5{
+
+color:orange;
+
+letter-spacing:3px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:800;
+
+line-height:1.2;
+
+}
+
+.hero span{
+
+color:orange;
+
+}
+
+.hero p{
+
+margin-top:25px;
+
+font-size:20px;
+
+line-height:34px;
+
+color:#d9d9d9;
+
+max-width:650px;
+
+}
+
+.hero img{
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =========================
+ABOUT
+========================= */
+
+.about{
+
+background:#171717;
+
+padding:100px 0;
+
+}
+
+.about img{
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+.about h2{
+
+font-size:45px;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.about p{
+
+color:#cccccc;
+
+line-height:32px;
+
+}
+
+.about h3{
+
+color:orange;
+
+font-weight:bold;
+
+}
+
+/* =========================
+SERVICE
+========================= */
+
+.service{
+
+padding:100px 0;
+
+background:#111;
+
+}
+
+.service-card{
+
+background:#1d1d1d;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+height:100%;
+
+border:1px solid #333;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-12px);
+
+border-color:orange;
+
+box-shadow:0 15px 40px rgba(255,165,0,.25);
+
+}
+
+.service-card i{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+color:orange;
+
+}
+
+.service-card h4{
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.service-card p{
+
+color:#c9c9c9;
+
+}
+
+/* =========================
+TITLE
+========================= */
+
+h2{
+
+font-weight:700;
+
+}
+
+.text-warning{
+
+color:orange !important;
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+background:#000;
+
+padding:35px;
+
+color:#888;
+
+font-size:15px;
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:orange;
+
+border-radius:20px;
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
+.hero img{
+
+margin-top:50px;
+
+}
+
+.about{
+
+text-align:center;
+
+}
+
+.about img{
+
+margin-bottom:40px;
+
+}
+
+.navbar-nav{
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+.btn-warning{
+
+margin-top:15px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+line-height:28px;
+
+}
+
+.about h2{
+
+font-size:32px;
+
+}
+
+.service-card{
+
+padding:30px;
+
+}
+
+}
+
+/*=========================
+GALLERY
+=========================*/
+
+.gallery{
+background:#181818;
+}
+
+.gallery-img{
+height:280px;
+width:100%;
+object-fit:cover;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery-img:hover{
+transform:scale(1.05);
+}
+
+/*=========================
+TESTIMONIAL
+=========================*/
+
+.testimonial{
+background:#111;
+}
+
+.testi-card{
+background:#1d1d1d;
+padding:30px;
+border-radius:20px;
+text-align:center;
+transition:.4s;
+height:100%;
+}
+
+.testi-card:hover{
+transform:translateY(-8px);
+}
+
+.testi-card p{
+color:#ccc;
+margin:20px 0;
+}
+
+/*=========================
+CONTACT
+=========================*/
+
+.contact{
+background:#181818;
+}
+
+.contact input,
+.contact textarea{
+background:#222;
+color:white;
+border:1px solid #444;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+border-color:orange;
+box-shadow:none;
+}
+
+/*=========================
+FOOTER
+=========================*/
+
+footer{
+background:#000;
+padding:60px 0;
+color:#bbb;
+}
+
+footer h3,
+footer h4{
+color:white;
+}
+
+footer hr{
+border-color:#444;
+margin:30px 0;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+
+@media (max-width: 992px){
+
+    body{
+        padding-top:80px;
+    }
+
+    .navbar{
+        padding:10px 0;
+        background:#111 !important;
+    }
+
+    .navbar-brand{
+        font-size:22px;
+    }
+
+    .navbar-nav{
+        margin-top:15px;
+        text-align:center;
+    }
+
+    .navbar .btn{
+        width:100%;
+        margin-top:15px;
+        margin-left:0 !important;
+    }
+
+    .about{
+        padding-top:40px;
+        text-align:center;
+    }
+
+    .about img{
+        margin-bottom:30px;
+    }
+
+    .about h2{
+        font-size:38px;
+    }
+
+    .about p{
+        font-size:16px;
+    }
+
+    .service-card{
+        margin-bottom:25px;
+    }
+
+    .gallery img{
+        margin-bottom:20px;
+    }
+
+    footer{
+        text-align:center;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .navbar-brand{
+        font-size:20px;
+    }
+
+    .about h2{
+        font-size:30px;
+    }
+
+    .about h3{
+        font-size:32px;
+    }
+
+    .about p{
+        font-size:15px;
+    }
+
+    h1{
+        font-size:34px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    h3{
+        font-size:24px;
+    }
+
+    section{
+        padding:60px 0;
+    }
+
+    .btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}
